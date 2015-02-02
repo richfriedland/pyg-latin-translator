@@ -12,8 +12,7 @@ if len(original) > 0 and original.isalpha():
     word = original.lower()
     # define variable 'first' which is the first character of the word that was inputted
     first = word[0]
-    # define variable 'new_word' which is a concatenation of the lower case version of the inputted text, the first
-    letter of the inputted text and the 'ay' suffix from the pyg variable
+    # define variable 'new_word' which is a concatenation of the lower case version of the inputted text, the first letter of the inputted text and the 'ay' suffix from the pyg variable
     new_word = word + first + pyg
     # slice new_word from the second character through the end
     new_word = new_word[1:]
