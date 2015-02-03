@@ -12,13 +12,15 @@ if len(original) > 0 and original.isalpha():
 	first_letter = source_word[0]
 	# determine if the first letter is a consonant
 	if first_letter in ('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z'):
-		# define variable 'translated_word' which is a concatenation of the source word converted to lowercase, followed by the first letter of the source word and the suffix 'ay' (called by the 'pyg' variable)
+		# define variable 'translated_word' which is a concatenation of the source word converted to lowercase, followed 
+		# by the first letter of the source word and the suffix 'ay' (called by the 'pyg' variable)
 		translated_word = source_word + first_letter + pyg
 		# slice the translated word after the first letter
 		translated_word = translated_word[1:]
 	# determine if the first letter of the source word is a vowel, it will be processed differently
 	elif first_letter in ('a', 'e', 'i', 'o', 'u', 'y'):
-		# define variable 'translated_word' which is a concatenation of the source word converted to lowercase, followed by the suffix 'way' (called by the 'pyg_vowel' variable)
+		# define variable 'translated_word' which is a concatenation of the source word converted to lowercase, followed
+		#by the suffix 'way' (called by the 'pyg_vowel' variable)
 		translated_word = source_word + pyg_vowel
 	# print the translated word to the console
 	print translated_word
